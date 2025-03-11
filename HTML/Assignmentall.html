@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    nav{
+    background-color: lightgoldenrodyellow;
+    border: 5px ridge slategrey;
+    }
+    .menu-bar{
+       display:flex;
+       list-style: none;
+       justify-content:space-around;
+       align-items:center;
+       font-size:20px;
+    }
+    .menu-items{
+        /* border:1px solid black; */
+        padding:20px;
+        flex-grow: 2;
+        /* flex-shrink: 1; */
+    }
+    .logo{
+        flex-grow: 2;
+        /* flex-shrink: 1; */
+    }
+    a:hover{
+        color: black;
+        text-decoration: underline;
+        font-size: 35px;
+    }
+    table,td,th,tr{
+        border: 3px ridge Black;
+        border-collapse:collapse;
+        padding: 20px;
+    }
+    th{ 
+        color: darkblue;
+        background-color: lightskyblue;
+    }
+    td{
+        color: #10124f;
+        background-color: lightgrey;
+    }
+    .parent{
+        border:2px solid brown;
+        display:flex;
+        height:300px;
+        justify-content:space-evenly;
+        align-items:center;
+        flex-direction: row;
+        flex-wrap:wrap;
+        align-content: space-evenly;
+        gap:30px;
+    }
+    .child{
+        width:200px;
+        height:100px;
+        background-color: darkmagenta;
+        border:1px solid white;
+        color:white;
+        font-size: 30px;
+    }
+@font-face {
+        font-family:dancing_script ;
+        src: url('../HTML/fonts-1/DancingScript-VariableFont_wght.ttf');
+    } 
+@font-face {
+        font-family:Lora-Italic ;
+        src: url('../HTML/fonts-1/Lora-Italic-VariableFont_wght.ttf');
+    } 
+    .heading-1{
+        font-size:50px;
+        font-weight:200;
+        font-family:dancing_script;
+        color:darkblue;
+        text-decoration: underline;
+    }
+    .para-1{
+        font-size:20px;
+        font-weight:200;
+        font-family:Lora-Italic;
+        color:rgb(139, 0, 86);
+        text-align: justify;
+    }
+    .para-8{
+        font-size:20px;
+        font-weight:200;
+        font-family:Lora-Italic;
+        color:darkgreen;
+        text-align: justify;
+    }
+    .heading-2{
+        font-size:50px;
+        font-weight:200;
+        font-family:dancing_script;
+        color:darkblue;
+        text-decoration: underline;
+    }
+    .heading-3{
+        font-size:50px;
+        font-weight:200;
+        font-family:dancing_script;
+        color:darkblue;
+        text-decoration: underline;
+    }
+    .para-4{
+        font-size:20px;
+        font-weight:200;
+        color:red;
+    }
+    .para-6{
+        font-size:20px;
+        font-weight:200;
+        color:#10124f;
+        border:3px solid darkmagenta;
+        width: 500px;
+        background-color: azure;
+        padding: 80px;
+    }
+    .para-7{
+        font-size:20px;
+        font-weight:200;
+        text-align: center;
+        border: 2px solid maroon;
+    }
+    .logo-img{
+        height: 100px;
+    }
+    .table-1{
+        font-size: 30px;
+    }
+    .img-parent{
+        display:flex;
+    }
+    .img-block{
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 100px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu-bar">
+                <li class="menu-items logo">
+                  <img class="logo-img" src="media/uklogo.jpg" alt="">
+                </li>
+                <li class="menu-items">
+                   <a href="#main-heading">Home</a>
+                </li>
+                <li class="menu-items">
+                    <a href="#second-heading">About Us</a>
+                </li>
+                <li class="menu-items">
+                    <a href="#third-heading">Servieces</a>
+                </li>
+                <li class="menu-items">
+                     <a href="#fourth-heading">flexbox</a>
+                </li>
+                <li class="menu-items">
+                    <a href="#fifth-heading">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <aside>
+        <p>This is a division for side portion of the website.</p>
+    </aside>
+    <main>
+        <section id="main-heading">
+            <h1 class="heading-1"> Uttara Kannada </h1>
+            <p class="para-8"> <b> Uttara Kannada</b> is a fifth largest district in the Indian state of Karnataka, It is bordered by the state of Goa and Belagavi district to the east, Sivamogga district and Udupi district to the south,the Laccadive sea to the west. Karwar is the district headquarters, Kumata and Sirasi are the major commercial centers in the district. The district's agroclimatic divisions include the coastal plain consisting of Karwar,Ankola,Kumata,Honnavara,Bhatkala taluks and Malenadu concsisting of Sirasi,Siddapura,Yellapur,Haliyal,Dandeli,Joida,Mundgod taluks.
+            </p>
+            <h2 class=" heading-2">  About uttara Kannada </h2>
+            <p class="para-1"> Uttara kannada is famous for its natural beauty,rivers,waterfallse,beaches and forest.
+            The district has varied geographical features with thick forest,perennail rivers and abundant flora and fauna and a long coastal line of about 140KM in length Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi a tempora vel eius similique labore. Commodi molestiae architecto mollitia ab est ullam ad tempore perferendis? At exercitationem pariatur dolorum perspiciatis nisi suscipit eligendi sunt deserunt minima libero provident modi laborum reprehenderit nesciunt, eum hic, qui voluptate corrupti quibusdam quia quasi rerum? Culpa velit quas asperiores eius ducimus. Dolore distinctio, molestias similique dolor odio optio cum assumenda maiores quidem, voluptatem dicta ducimus doloremque, perferendis vitae voluptatibus. Soluta nemo consequuntur eius, distinctio labore consectetur modi blanditiis nulla fugiat, earum porro ab sequi assumenda, ex maxime nesciunt! Debitis nam nihil dolore iure consectetur.</p>
+            <p class="para-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab cum architecto sunt tempore voluptatum, beatae consequuntur facere quam, magni mollitia similique nesciunt! Vitae molestiae illum incidunt ducimus quia sint eveniet saepe praesentium unde nulla molestias dignissimos aliquid, facilis aspernatur expedita cum obcaecati soluta magnam facere? Corporis ullam voluptates, expedita quam qui ratione, accusamus consectetur soluta officiis laborum eius omnis illo hic, ipsa earum sunt doloremque sequi? Repudiandae nam voluptas vel cupiditate veritatis eveniet dignissimos optio excepturi voluptatem tempora inventore quibusdam ut doloribus asperiores, labore sed! Cupiditate at voluptas a quia voluptates. Quasi fugit quo vero sed eligendi id rem minus nulla nobis vitae earum voluptate eum inventore veniam facere impedit architecto, aut repellat ea libero tempora neque laudantium. Veritatis sunt saepe, odio hic quasi repellendus non, deserunt modi numquam nemo voluptate. Temporibus ipsa eos iusto! Eius animi totam iste consequatur magni similique id obcaecati tempore optio et? Molestiae, neque sint? Repellat, molestias alias facere consectetur hic excepturi dolor sed iure sint soluta minima cumque optio porro. Tempora, omnis sint. Magnam, nam, nisi deleniti eum ipsa ad magni molestiae exercitationem doloribus quidem iusto ex officia ut sunt ullam reprehenderit cupiditate vero aperiam repudiandae cum iure necessitatibus facere tempora! Enim, maiores veritatis!.</p>
+        </section>
+        <section id="second-heading">
+        <h1 class="heading-3"> Table of list</h1>
+            <table>
+            <tr class="table-1">
+                    <th> Falls</th>
+                    <th> Rivers</th>
+                    <th> Beaches</th>
+                    <th> Temples</th>
+            </tr>
+            <tr>
+                <td> Joga </td>
+                <td> Sharavati</td>
+                <td> Om beach</td>
+                <td> Shree Marikamba Sirasi</td>
+            </tr>
+            <tr>
+                <td> Sathodi falls</td>
+                <td> Aghanashini</td>
+                <td> Gokarna</td>
+                <td> sahasralinga</td>
+            </tr>
+            <tr>
+                        <td> Unchalli</td>
+                        <td> Kali</td>
+                        <td> Eco beach</td>
+                        <td> Idagunji Mahaganapathi</td>
+            </tr>
+            <tr>
+                        <td> Shivaganga</td>
+                        <td> Gangavali</td>
+                        <td> Karwar beach</td>
+                        <td> Manjuguni</td>
+            </tr>
+            <tr> 
+                        <td> Kasarkod beach</td>
+                        <td> Varada</td>
+                        <td> Murudeshwara beach</td>
+                        <td>Kotitheertha temple</td>
+            </tr>
+            </table><br><br>
+            <h2 class="heading-3"> Taluks of Uttara Kannada</h2>
+            <ol class="para-4">
+                <li> Ankola</li>
+                <li> Bhatkala</li>
+                <li> Dandeli</li>
+                <li> Haliyal</li>
+                <li> Honnavara</li>
+                <li> Joida</li>
+                <li> Karwar</li>
+                <li> Kumata</li>
+                <li> Mundagod</li>
+                <li> Sirasi</li>
+                <li> Siddapur</li>
+                <li> Yellapur</li>
+            </ol>
+        </section>
+        <section id="third-heading">
+            <div class="img-parent">
+                <div class="img-block">  
+                <img src="media/jog falls.jpg" alt=" joga_falls" width="250px">
+                <figcaption>jog falls</figcaption>
+                </div>
+                <div class="img-block">   
+                <img src="media/magod falls.JPG" alt=" magod_falls" width="250px">
+                <figcaption>magod falls</figcaption>
+                </div>
+                <div class="img-block"> 
+                <img src="media/sathodi-falls-haveri.jpg" alt="Sathoddi_falls" width="250px">
+                <figcaption>sathodi-falls</figcaption>
+                </div> <br><br>
+                <div class="img-block">
+                <img src="media/gangavali-river.jpg" alt="nGanga" width="200px"> 
+                <figcaption>gangavali-river</figcaption>
+                </div>
+                <div class="img-block">
+                <img src="media/kali-river.jpg" alt=" Kali" width="200px">
+                <figcaption>kali-river</figcaption>
+                </div> <br><br>
+                <div class="img-block">
+                <img src="media/Eco beach.jpg" alt="Eco" width="200px"> 
+                <figcaption>Eco-beach</figcaption> 
+                </div> 
+                <div class="img-block">
+                <img src="media/gokarna beach.jpg" alt=" gokarna" width="200px"> 
+                <figcaption>gokarna beach</figcaption>
+                </div>  <br><br>
+                <div class="img-block">
+                <img src="media/Murudeshwara.jpg" alt="temple" width="200px">
+                <figcaption>Murudeshwara</figcaption>
+                </div> 
+                <div class="img-block">         
+                <img src="media/Idagunji.jpg" alt="temple" width="200px"> 
+                <figcaption>Idagunji</figcaption>
+                </div>
+                <div class="img-block">
+                <img src="media/sahasralinga.jpg" alt=" temple" width="200px">
+                <figcaption>sahasralinga</figcaption>
+                </div> 
+                </div>
+
+                </div>
+                <video src="media/WhatsApp Video 2025-02-26 at 10.33.55 PM (1).mp4" controls width="300px" autoplay muted loop></video><br><br>  
+                <audio src="media/birds-ambiance-204513.mp3" controls width="300px" autoplay muted loop></audio>
+        </section>
+        <section id="fourth-heading">
+            <div class="parent">
+                <div class="child">1</div>
+                <div class="child">2</div>
+                <div class="child">3</div>
+                <div class="child">4</div>
+                <div class="child">5</div>
+                <div class="child">6</div>
+                <div class="child">7</div>
+                <div class="child">8</div>
+                <div class="child">9</div>
+                <div class="child">10</div>
+                
+            </div>
+        </section>
+        <section id="fifth-heading">
+            <h1 class="heading-1"> Forms</h1>
+            <form class="para-6" method="post" action="">
+            <input type="hidden" name="secret_id" id="secret_id" value="Bond-007">
+            <label for="first_name">First_name :</label>
+            <input type="text" name="first_name" id="first_name" placeholder="Enter your name" required><br> <br>
+            <label for="middle_name">Middle_name :</label>
+            <input type="text" name="middle_name" id="middle_name"><br> <br>
+            <label for="last_name">Last_name :</label>
+            <input type="text" name="last_name" id="last_name"><br> <br>
+            <label for="email id">Email ID:</label>
+            <input type="email" name="email id" id="email id" autofocus> <br> <br>
+            <label for="password">password:</label>
+            <input type="password" name="password" id="password" placeholder="enter 8 digits"> <br> <br>
+            <label for="phone_number">phone number:</label>
+            <input type="tel" name="phone_number" id="phone_number" value="+91-9876543210" disabled><br> <br>
+            <label for="age">age:</label>
+            <input type="number" name="age" id="age" step="2"><br> <br>
+            <label for="DOB">DOB:</label>
+            <input type="DATE" name="dob" id="dob" min="2000-01-01" max="2025-02-17"><br><br>
+            <input type="radio" name="gender" id="male">
+            <label for="male"> male:</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female"> female:</label>
+            <input type="radio" name="gender" id="others">
+            <label for="others">others</label><br><br>
+            <label for="upload photo">upload photo</label>
+            <input type="file" name="photo" id="file" multiple accept="application/docx">
+            <input type="reset"><br><br>
+            <input type="reset" value="Clear">
+            <input type="submit" value="submit">
+            </form>
+        </section>
+
+    </main><br><br>
+    <footer class="para-7">
+            <p> All Right Reserved &copy; 2025
+                <a href="http://www.com">target="_blank"uttarA KannadA</a><sup>&reg;</sup></p>
+    </footer>
+</body>
+</html>
