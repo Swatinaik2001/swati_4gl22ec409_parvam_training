@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /* font-face applied only offline method */
+      @font-face {
+        font-family:dancing_script ;
+        src: url('fonts/DancingScript-VariableFont_wght.ttf');
+      }
+      @font-face {
+        font-family:Lora-Variable ;
+        src: url(fonts/Lora-VariableFont_wght.ttf);
+      }
+        p{    /* Because of Elements selector we are getting repetitive style */  
+            color: white;
+            background-color: rgb(255,128,0);
+            padding:10px;
+        }
+          /* Syntax for class selector :".class_name" */
+          .para-one{
+            color:navy;
+            background-color: greenyellow;
+          }
+          .para-two{
+            color: darkcyan;
+            background-color: bisque;
+          }
+          .heading-1{
+          font-size:60px;
+          font-weight:200;
+          font-family: "Oswald", serif;
+          text-align:center;
+          }
+          .heading-2{
+            font-size:60px;
+            font-weight:200;
+            font-family: "Grechen Fuemen", serif;
+            text-align:center;
+            /* we can apply underline,overline &line-through */
+            text-decoration:underline;
+            
+            
+          }
+          .heading-3{
+          font-size:60px;
+          font-weight:200;
+          /* font-family: "Oswald", serif; */
+          font-family:dancing_script;
+          
+          }
+          .heading-4{
+            font-size:40px;
+            font-size:200;
+            /* font-family: "Playwrite IT Moderna", serif; */
+           font-family:Lora-Variable;
+          }
+          .some-para{
+            /* we can apply 4 values for text-align property: left,right,center &justify */
+            text-align: justify;
+            line-height:1;
+          }
+          a{
+            text-decoration:none;
+          }
+          .heading-4{
+            /* we can apply 3 values: uppercase,lowercase,&capitalize */
+            text-transform: uppercase;
+            letter-spacing:4px ;
+            word-spacing:10px;
+          }
+    </style>
+    <!-- link only required for online method -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet"> -->
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet"> -->
+
+</head>
+<body>
+    <p class="para-one">This is a paragraph.</p>
+    <p class="para-two">This is a second paragraph.</p>
+    <p> This is a third paragraph.</p>
+    <h1 class="para-one heading-1"> Heading</h1>
+    <p> The above written tag indicates the heading</p>
+    <ol class="para-two">
+        <li> list1</li>
+        <li> list2</li>
+        <li> list3</li>
+        </ol>
+        <h2 class=heading-2>Heading2</h2>
+        <h3 class=heading-3>Swati </h3>
+        <h2 class=heading-4>This is a line</h2>
+        <p class= "some-para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste corporis tempora sunt at harum amet, tenetur modi in minima fuga doloribus similique? Repellendus, cumque adipisci laborum, inventore consectetur officiis veniam sit optio rem odit dolorem reprehenderit sapiente tempore quis, vel atque eligendi eius ipsum excepturi quasi. Numquam quisquam aperiam expedita molestiae eligendi aliquid ratione illum blanditiis voluptatibus deserunt mollitia cum, dolor minus amet optio? Provident velit veniam pariatur quia atque nisi possimus doloribus ratione dolorum suscipit. Modi, fuga iusto, qui ab rem mollitia delectus iure porro eveniet sint magnam? Culpa corporis quasi accusamus aut nulla officia, officiis voluptate ab, eos sint dicta tenetur iusto eveniet! Commodi blanditiis voluptates, minima fugit sequi quo unde iusto, molestiae quis repudiandae ad. Vitae iste, obcaecati molestias id est recusandae cumque! Cum repellat officia, maxime earum, in cupiditate tempore hic ut sint eius et inventore modi quas ratione accusamus excepturi odio autem perspiciatis sed architecto iure, obcaecati eaque neque qui! Obcaecati voluptates corporis laboriosam facere sint mollitia delectus aspernatur iure id vero a, voluptate neque voluptatibus aliquid consectetur dignissimos repudiandae itaque reprehenderit quibusdam possimus? Saepe eaque, fugiat in, voluptas natus dicta repellendus libero iure ducimus nihil, fuga illo molestiae. Autem labore ab magnam obcaecati! Quia.
+        </p>
+        <a href="https://www.parvaM.com">parvaM</a>
+
+
+        <div>This is a div block of code.</div>
+        <div> This is a div block of code.</div>
+        <span>This is a span block of code.</span>
+        <span>This a another span block of code.</span>
+        <!-- We have 2 types of elements in HTML. 
+        They are: Block elements & Inline elements--> 
+        <h1> This is a heading</h1>
+        <h1> This is a another heading</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto doloribus, dolorem sit in perspiciatis esse blanditiis, quo ullam eligendi suscipit molestiae ab eveniet aliquam quam cumque dolores. Fugit neque assumenda dolore! Numquam iure illum, cumque ad fuga, distinctio sit ullam earum quis facere voluptas blanditiis reiciendis eius cum. Recusandae, vitae?
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit debitis temporibus exercitationem est, ut sunt harum assumenda, ea numquam dolorum, quas nemo ducimus! Distinctio voluptate et vero ad, voluptatem voluptatibus, odio error delectus, libero ut numquam illo ratione. Sed eum aliquid tempora ex sapiente impedit quibusdam rem dolorum autem vero?</p>
+      <a href="https://www.parvaM.com">parvaM</a>
+      <a href="https:www.geck.com">gecK</a>
+  </body>
+
+</html>
